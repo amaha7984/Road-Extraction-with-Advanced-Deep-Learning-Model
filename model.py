@@ -2,7 +2,7 @@ import tensorflow as tf
 from tensorflow.keras.layers import Input, UpSampling2D, Conv2D, BatchNormalization, Activation, Concatenate
 from tensorflow.keras.models import Model
 from tensorflow.keras.applications import Xception
-from layers import DenseDDSSPP, se_block
+from layer import DenseDDSSPP, se_block
 
 def DeepLabV3PlusDenseDDSSPP(input_shape=(512, 512, 3)):
     """DeepLabV3+ with DenseDDSSPP integration."""
