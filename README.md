@@ -21,14 +21,14 @@ The data presented in this study are available in the public domain for research
 1. Install dependencies as mentioned in 'requirements.txt'
 2. Download the dataset from the public repository:
    - Place all satellite images in data/images
-   - Place tall orresponding masks in data/masks
-3. Run the training script: python train.py
+   - Place all corresponding road extracted ground truth images in data/masks
+3. Run the training script: `python train.py`
    This will:
    - Dynamically load and split the dataset into training, validation, and test sets.
-   - Save the best model checkpoint in the outputs/ directory.
+   - Save the best model checkpoint in the outputs/directory.
 
 ##Testing
-   Run: python test.py
+   Run: `python test.py`  
    This will:
   - Dynamically regenerate the test set using the same split logic.
   - Evaluate the trained model and display metrics like accuracy, IoU, and F1 score.
